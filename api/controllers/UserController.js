@@ -51,7 +51,6 @@ exports.verificarLogin = function(req, res) {
         }
         else{
           //var x = require("../Globales.js").mensajesError(1);
-          console.log(x);
           res.json({exito: false, error: 2, mensaje: "Error verificando login"});
         }
       })
