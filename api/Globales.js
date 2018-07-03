@@ -26,7 +26,12 @@ function inicializarGLobal(variableGlobal, valor){
         return singletonGeneral;
 }
 
-module.exports.nombreBD = inicializarGLobal(nombreBD, "mongodb://localhost/Sirar") 
+var conexionDB = "mongodb://localhost/Sirar";
+if(process.env.OPENSHIFT_MONGODB_DB_URL){
+    conexionDB = process.env.OPENSHIFT_MONGODB_DB_URL + db_name;
+  }
+
+module.exports.nombreBD = inicializarGLobal(nombreBD, conexionDB) 
 module.exports.tokenGeneral = inicializarGLobal(tokenGeneral, "d89fgk");
 module.exports.rutaImagenesPerfil = inicializarGLobal(rutaImagenesPerfil, "imagenes/imagenesPerfil/")
 

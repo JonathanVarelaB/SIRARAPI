@@ -2,9 +2,9 @@
   "name": "con",
   "version": "1.0.0",
   "description": "It is a REST Service for the CONCR",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "author": "William/Jonathan",
   "license": "MIT",
