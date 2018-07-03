@@ -1,0 +1,23 @@
+{
+  "name": "con",
+  "version": "1.0.0",
+  "description": "It is a REST Service for the CONCR",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "William/Jonathan",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.17.1"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.2.0",
+    "just.randomstring": "^0.1.1",
+    "mongoose": "^5.0.7",
+    "multer": "^1.3.0",
+    "nodemailer": "^4.6.3",
+    "shelljs": "^0.8.2"
+  }
+}
