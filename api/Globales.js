@@ -35,15 +35,15 @@ let transporter = nodemailer.createTransport({
         port: 465,
         secure: true, // true for 465, false for other ports
         auth: {
-            user: "casasolalonso@gmail.com",
-            pass: "*********"
+            user: "sirarconcr@gmail.com",
+            pass: "Sirar2018"
         }
 });
 module.exports.emailTransporter = inicializarGLobal(emailTransporter, transporter);
 
 module.exports.emailOptions = function(correo, subject, message){    
                                     let mailOptions = {
-                                        from: "casasolalonso@gmail.com",
+                                        from: "sirarconcr@gmail.com",
                                         to: correo,
                                         subject: subject,     
                                         html: message
