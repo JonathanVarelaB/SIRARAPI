@@ -68,7 +68,7 @@ function mailSender(emailAdress, subject, message, res, random){
                         if(usuario.fotoUrl)
                         borrarArchivo(usuario.fotoUrl);                                               
                     });  
-                    res.json({exito: false, error: 4, mensaje: "Ocurrió un error enviando el correo" + err });                                        
+                    res.json({exito: false, error: 4, mensaje: "Ocurrió un error enviando el correo" + error });                                        
                   }
           Usuario.findOneAndUpdate({correo: emailAdress}, { $set: {"token": random }}, function(err, usuario) {
             if (err)
